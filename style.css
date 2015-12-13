@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding:0;
+    display: none;
+}
+a{
+    outline:none;
+}
+.images{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+}
+.images .image{
+    width:25%;
+    padding:10px;
+    float:left;
+    box-sizing:border-box;
+}
+@media(max-width:1200px){
+ .images .image{
+     width:33.33%;
+     }   
+}
+@media(max-width:900px){
+ .images .image{
+     width:50%;
+     }   
+}
+@media(max-width:500px){
+ .images .image{
+     width:100%;
+     }   
+}
+img{
+    width:100%;
+}
+.pagination{
+    width:100%;
+    padding:50px;
+    text-align: center;
+    font-size: 18px;
+}
+.pagination >*{
+    margin-right:5px;
+}
+.pagination a{
+    color:#333;
+}
+.lightbox{
+    position: fixed;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox-background{
+    position: absolute;
+     background-color: rgba(0,0,0,0.6);
+     box-sizing:border-box;
+    height: 100%;
+    width: 100%; 
+    top:0;
+    left:0; 
+}
+.lightbox-content{
+    position: relative;
+    background: #fff;
+    width: 900px;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    overflow:auto;
+    padding:30px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.lightbox img{
+    max-width: 100%;
+
+}
