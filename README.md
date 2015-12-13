@@ -11,7 +11,8 @@ Clicking on thumbnails opens a lightbox.
 
 (index.php)
 
-`$dir = "images"; //directory containing images`
+`$dir = "images"; //directory containing images`  
+
 `$max_page = 12; //pics per page`
 
 
